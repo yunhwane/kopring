@@ -13,6 +13,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity
 import org.springframework.security.config.http.SessionCreationPolicy
 import org.springframework.security.core.context.SecurityContextHolder
 import org.springframework.security.web.SecurityFilterChain
+import org.springframework.security.web.context.SecurityContextHolderFilter
 
 
 @Configuration
@@ -38,9 +39,16 @@ class SecurityConfig {
             it.disable()
         }
 
+        http.httpBasic {
+            it.disable()
+        }
+
+        http.addFilterBefore(LoggingFilter(), SecurityContextHolderFilter::class.java)
+
         return http.build();
     }
 }
+
 
 class LoggingFilter : Filter {
 
