@@ -1,2 +1,7 @@
 server:
   port: 8081
+
+app:
+  user:
+    password: $2a$12$deME6les78ikkGQcl7VE4ulWObM5OmEuKz94wktuHbSkDNoFmxFvm
+
