@@ -40,7 +40,7 @@ class SecurityConfig (private val userDetailsService: UserDetailsService) {
         }
 
         http.authorizeHttpRequests {
-            it.requestMatchers("/api/health-check").permitAll()
+            it.requestMatchers("/api/health-check", "/api/users").permitAll()
             it.anyRequest().authenticated()
         }
 
