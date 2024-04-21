@@ -1,4 +1,4 @@
-package com.example.securityexample.user
+package com.example.securityexample.user.service
 
 import org.jetbrains.annotations.NotNull
 

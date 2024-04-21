@@ -1,5 +1,6 @@
 package com.example.securityexample.user
 
+import com.example.securityexample.user.service.UserRequest
 import io.restassured.RestAssured
 import io.restassured.response.ExtractableResponse
 import io.restassured.response.Response

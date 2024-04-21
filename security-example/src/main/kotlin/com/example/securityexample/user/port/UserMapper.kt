@@ -1,4 +1,7 @@
-package com.example.securityexample.user
+package com.example.securityexample.user.port
+
+import com.example.securityexample.user.service.UserRequest
+import com.example.securityexample.user.domain.User
 
 class UserMapper {
     companion object {

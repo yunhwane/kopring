@@ -1,4 +1,4 @@
-package com.example.securityexample.user
+package com.example.securityexample.user.domain
 
 import jakarta.persistence.*
 import org.springframework.security.crypto.password.PasswordEncoder

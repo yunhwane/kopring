@@ -1,6 +1,8 @@
-package com.example.securityexample.user
+package com.example.securityexample.user.service
 
-import com.example.securityexample.user.UserMapper.Companion.createUserInstance
+import com.example.securityexample.user.port.UserMapper.Companion.createUserInstance
+import com.example.securityexample.user.port.UserPort
+import com.example.securityexample.user.service.UserRequest
 import org.springframework.http.ResponseEntity
 import org.springframework.security.crypto.password.PasswordEncoder
 import org.springframework.web.bind.annotation.PostMapping
